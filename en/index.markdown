@@ -1,5 +1,5 @@
 ---
 layout: home
-title: Strona w budowie
+title: Site under construction
 i18n: home
 ---

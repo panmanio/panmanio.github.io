@@ -1,7 +1,7 @@
 ---
 layout: page
-title: O mnie
-permalink: /about/
+title: About
+permalink: /en/about/
 i18n: about
 ---
 
