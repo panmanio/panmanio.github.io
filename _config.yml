@@ -70,5 +70,9 @@ i18n:
     en: Personal page
     pl: Osobisty skrawek internetu
   langSwitch:
-    pl: "English version"
-    en: "Wersja polska"
+    pl:
+      txt: "English version"
+      img: "us.png"
+    en:
+      txt: "Wersja polska"
+      img: "pl.png"
