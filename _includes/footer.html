@@ -28,12 +28,23 @@
       <div class="footer-col footer-col-3">
         <p>{{- site.i18n.description[page.lang] | escape -}}</p>
         <p class="lang">
-        {% assign page_lang=site.pages | where: "i18n", page.i18n | where_exp: "item", "item.lang != page.lang" | first %}
-        {% if page_lang != nil %}
-        <a href="{{ page_lang.url }}">
-          <img src="/assets/images/{{site.i18n.langSwitch[page.lang].img}}"/>
-          {{site.i18n.langSwitch[page.lang].txt}}
-        </a>
+        {% if page.collection == "posts" %}
+          {% assign page_lang=site.posts | where: "i18n", page.i18n | where_exp: "item", "item.lang != page.lang" | first %}
+          {% if page_lang != nil %}
+          <a href="{{ page_lang.url }}">
+            <img src="/assets/images/{{site.i18n.langSwitch[page.lang].img}}"/>
+            {{site.i18n.langSwitch[page.lang].txt}}
+          </a>
+          {% endif %}
+        {% endif %}
+        {% if page.collection != "posts" %}
+          {% assign page_lang=site.pages | where: "i18n", page.i18n | where_exp: "item", "item.lang != page.lang" | first %}
+          {% if page_lang != nil %}
+          <a href="{{ page_lang.url }}">
+            <img src="/assets/images/{{site.i18n.langSwitch[page.lang].img}}"/>
+            {{site.i18n.langSwitch[page.lang].txt}}
+          </a>
+          {% endif %}
         {% endif %}
         </p>
       </div>
