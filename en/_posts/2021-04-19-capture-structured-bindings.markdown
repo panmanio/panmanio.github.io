@@ -48,7 +48,7 @@ auto d = [&b = b] { return b; }();
 The standard got reworded along the way and in C++ 20 final working draft the restriction is no longer there. But `clang` still fails, even with `-std=c++20`, while `gcc` and `msvc` are fine with both *simple-* and *init-capture* of the *structured binding*. I feel way more comfortable with `gcc` and `msvc` way as there is no need to provide special construct only to capture a single value.
 
 <details markdown="1" style="margin-bottom:16px">
-<summary>Interesting resources</summary>
+<summary>Interesting resources (click to expand)</summary>
 - [C++ Language Standard working draft N4713][cpp17-wd-n4713] (2017-11-27)
 - [C++20 Language Standard final working draft N4861][cpp20-wd-n4861] (2020-04-01)
 - [Why structured bindings can't declare variables?](https://www.reddit.com/r/cpp_questions/comments/e1ralf/why_structured_bindings_cant_declare_variables/) a Reddit post
