@@ -75,7 +75,7 @@ struct S {
 
 {% endhighlight %}
 
-The value of `S::i` in the example above can be unexpected.
+The code in the example above is invalid, but it compiles and can behave unexpectedly.
 
 Static *constexpr* members are *inline* by default.
 
