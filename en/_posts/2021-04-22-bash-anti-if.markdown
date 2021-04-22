@@ -5,7 +5,7 @@ date:   2021-04-22 19:37:01 +0200
 tags:   bash shell
 i18n:   2021-04-22_bash_anti_if
 ---
-Bash if-statements often look bloated to me, especially when the script aims to accomplish fairy simple goal but needs to perform plenty of sanity checks before proceeding with the actual task. Let's take advantage of shell builtin capabilities to write simpler code.
+Bash if-statements often look bloated to me, especially when the script aims to accomplish quite simple goal but needs to perform plenty of sanity checks before proceeding with the actual task. Let's take advantage of shell builtin capabilities to write simpler code.
 
 ## The `test` command and logical operators
 Instead of writing:
@@ -64,7 +64,7 @@ Let's take a look at parameter expansion and default variable values. That can a
 target=${1:-${PWD}}
 ```
 
-If there is an argument provided, use that as the target. Otherwise choose current directory.
+If there is an argument provided, use that as the `target`. Otherwise choose current directory.
 
 ```bash
 echo ${target:=${PWD}}
