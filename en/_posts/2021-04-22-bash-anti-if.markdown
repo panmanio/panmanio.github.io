@@ -27,7 +27,7 @@ test $# -eq 0 && { echo >&2 Params missing; exit 1; }
 In the latter, `]` is simply the last argument to `[`. Putting `]` is required. I prefer `test` over `[` as it looks less confusing for someone who sees it for first time. Also, with `test` we can take advantage of `_` variable, which is the last argument of previous command:
 
 ```bash
-test -f ~/.bash_aliases && . "$_" || { echo >&2 "$_ is missing"; exit 1; }
+test -f ~/.bash_aliases && source "$_" || { echo >&2 "$_ is missing"; exit 1; }
 ```
 
 I often define `die` function so the code becomes:
@@ -37,7 +37,7 @@ die() {
   echo >&2 "$@"
   exit 1
 }
-test -f ~/.bash_aliases && . "$_" || die "$_ is missing"
+test -f ~/.bash_aliases && source "$_" || die "$_ is missing"
 ```
 
 Remember to group the commands in curly brackets when you expect they can fail or when not sure; or go with a separate function.
@@ -82,13 +82,13 @@ When target is not set (or null), prints an error with the message provided and 
 find . -name _config.yml ${name:+-o -name $name}
 ```
 
-Use alternate value. When `$name` is not set or null, leave it as it is. Otherwise, replace with the alternate value. Results with:
+Use alternate value. When `name` is not set or null, leave it as it is. Otherwise, replace with the alternate value. Results with:
 
 ```
 find . -name _config.yml
 ```
 
-or, when `$name` is set and not null:
+or, when `name` is set and not null:
 
 ```
 find . -name _config.yml -o -name $name
