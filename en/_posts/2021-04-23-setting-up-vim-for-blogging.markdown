@@ -5,7 +5,7 @@ date:   2021-04-23 23:37:01 +0200
 tags:   vim writing
 i18n:   2021-04-23_using_vim_for_blogging
 ---
-VIM is the editor I use for programming. It is known for it's power at writing code thanks to it's built in features and numerous plugins, but how does it serve for blogging? Let's investigate on how to improve it's default behavior.
+VIM is the editor I use for programming. It is known for its power at writing code thanks to its built in features and numerous plugins, but how does it serve for blogging? Let's investigate on how to improve its default behavior.
 
 ## Spellcheck
 
@@ -25,7 +25,7 @@ VIM supports expansion of user defined abbreviations. For instance, if you defin
 :iabbrev veiw view
 ```
 
-to make VIM replace each "veiw" with "view" on the fly (in insert mode). [Vim-autocorrect](https://github.com/panozzaj/vim-autocorrect) is one of the plugins that come with predefined useful abbreviations.
+to make VIM replace each "veiw" with "view" on the fly (in insert mode). [Vim-autocorrect](https://github.com/panozzaj/vim-autocorrect) is one of the plugins that come with a set of predefined useful abbreviations so you don't have to provide definitions of the most common ones.
 
 ## Dictionary
 
@@ -39,7 +39,7 @@ Now that the dictionary is set up, it can be used with `<C-x><C-k>` in insert mo
 
 ## Thesaurus
 
-Looking for synonyms? VIM supports thesaurus, however it has to be configured. I was able to configure the built in feature but it needed a hack to handle multi word synonyms and I didn't like that. I've decided to install [vim-lexical](https://github.com/preservim/vim-lexical) plugin. Just as the built in feature, the plugin needs a synonyms file to work: grabbed one from [Project Gutenberg](https://www.gutenberg.org/ebooks/3200). Tell vim-lexical where the file is and initialize the plugin:
+Looking for synonyms? VIM supports thesaurus, however it has to be configured. I was able to configure the built in feature but it needed a [hack](https://www.reddit.com/r/vim/comments/55y53e/allow_spaces_in_thesaurus_entries/) to handle multi word synonyms and I didn't like that. I've decided to install [vim-lexical](https://github.com/preservim/vim-lexical) plugin instead. Just as the built in feature, the plugin needs a synonyms file to work: grabbed one from [Project Gutenberg](https://www.gutenberg.org/ebooks/3200). Tell vim-lexical where the file is and initialize the plugin:
 
 
 ```vim
@@ -62,7 +62,7 @@ In insert mode, we can use `<C-x><C-t>` for thesaurus.
 
 ## Other plugins
 
-There are more plugins that support the writers work, I present few that I have found particularly useful.
+There are more plugins that support the writers, I present some that I have found particularly useful.
 
 # textobj-sentence
 
@@ -96,9 +96,11 @@ Struggling with word repetitions? [Ditto](https://github.com/dbmrq/vim-ditto) is
 
 ## Let's see how it works
 
-All these solutions look promising. I've already benefited from including them in my VIM configuration while writing this blog post. Will do further testing and investigation in next days. Haven't yet tried plugins like [vim-pencil](https://github.com/preservim/vim-pencil) or [vim-abolish](https://github.com/tpope/vim-abolish).
+All these solutions look promising. I've already benefited from including them in my VIM configuration while writing this blog post. Will do further testing and investigation in next days. Didn't try plugins like [vim-pencil](https://github.com/preservim/vim-pencil) or [vim-abolish](https://github.com/tpope/vim-abolish) yet.
 
 Further reading:
 - [Using spell checking in VIM](https://www.linux.com/training-tutorials/using-spell-checking-vim/)
 - [Using a Thesaurus File in VIM](https://thesynack.com/posts/vim-thesaurus/)
 - [VIM Spell Check](https://linuxhint.com/vim_spell_check/)
+- [VIM for writing](https://www.naperwrimo.org/wiki/index.php?title=Vim_for_Writers)
+- [10 VIM plugins for writers](https://tomfern.com/posts/vim-for-writers)
