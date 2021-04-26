@@ -59,6 +59,9 @@ The standard got reworded along the way and in C++ 20 final working draft the re
 </details>
 
 
+Comments on [dev.to](https://dev.to/maniowy/capture-structured-bindings-in-c-17-4hlb).
+
+
 [^1]: There is a difference in handling *tuple*-like structs and other structs. You can check [this reference][cppref_sb] for more details.
 
 [cppref_sb]: https://en.cppreference.com/w/cpp/language/structured_binding

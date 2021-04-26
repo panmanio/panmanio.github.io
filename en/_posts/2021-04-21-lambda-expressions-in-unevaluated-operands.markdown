@@ -103,4 +103,6 @@ void unevaluated_lambda() {
 
 Clang complains with the same error: *lambda expression in an unevaluated operand*. The code compiles with gcc and msvc.
 
+Comments on [dev.to](https://dev.to/maniowy/lambda-expressions-in-unevaluated-operands-2ko3).
+
 [^1]: When typeid is used with an object of polymorphic type, its operand is evaluated.

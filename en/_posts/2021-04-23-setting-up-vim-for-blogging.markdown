@@ -104,3 +104,5 @@ Further reading:
 - [VIM Spell Check](https://linuxhint.com/vim_spell_check/)
 - [VIM for writing](https://www.naperwrimo.org/wiki/index.php?title=Vim_for_Writers)
 - [10 VIM plugins for writers](https://tomfern.com/posts/vim-for-writers)
+
+Comments on [dev.to](https://dev.to/maniowy/setting-up-vim-for-blogging-37oa).
