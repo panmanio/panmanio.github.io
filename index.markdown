@@ -1,5 +1,5 @@
 ---
 layout: home
-title: Strona w budowie
+title: Blog
 i18n: home
 ---
