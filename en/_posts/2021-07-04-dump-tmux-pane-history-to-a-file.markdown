@@ -19,29 +19,41 @@ With `tmux` you can save last `N` lines of current pane to a file with two conse
 :save-buffer ~/filename
 ```
 
+
 Replace `N` with desired number, or capture whole pane history with `:capture-pane -S -`.
 That can be reduced to a single command when you invoke the `capture-pane` from the command line, like this:
+
 
 ```bash
 tmux capture-pane -pS -10000 > ./last-10000-lines.out
 ```
 
+
 Or this:
+
 
 ```bash
 tmux capture-pane -pS - > ./pane-history
 ```
 
+
 Another advantage of using command-line version is that you can store it as a function or alias in your shell, like in bash:
+
 
 ```bash
 alias tmux-save-pane='tmux capture-pane -pS -'
 ```
 
+
 Now the use is really simple:
+
 
 ```bash
 tmux-save-pane > ~/tmux-pane-history
 ```
 
+
 That command has helped me in trouble many times, I hope you also find it useful. If you are not using a terminal multiplexer, I really advise to start using one. `tmux` is the multiplexer I use, but as a `vim` addict I can't live with the default `C-b` prefix. First thing to do in my [.tmux.conf](https://github.com/maniowy/dotfiles/blob/master/.tmux.conf) is to change the binding to `C-a` 😉.
+
+
+Comments on [dev.to](https://dev.to/maniowy/dump-tmux-pane-history-to-a-file-14pi).
