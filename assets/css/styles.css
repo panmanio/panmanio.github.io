@@ -51,13 +51,13 @@ pre table pre {
 }
 
 .highlighter-rouge .highlight, .highlight {
-    background: inherit;
+    background: var(--code_bg);
 }
 
 .highlight .n, .highlight .p {
     color: var(--text);
 }
 
-.highlight .s, .highlight .s1 {
+.highlight .s, .highlight .s1, .highlight .s2 {
     background-color: var(--code_highlight);
 }
