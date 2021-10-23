@@ -1,0 +1,63 @@
+:root {
+    --sitebg: #171717;
+    --text: #aaa;
+    --code_bg: #000;
+    --code_highlight: #333333;
+    --border: #424242;
+    --link: #228822;
+    --link_visited: #228844;
+}
+
+body {
+    background-color: var(--sitebg);
+    color: var(--text);
+}
+
+.site-title, .site-title:visited {
+    color: var(--text);
+}
+
+.site-header {
+    border-bottom: 1px solid var(--border);
+}
+
+.site-footer {
+    border-top: 1px solid var(--border);
+}
+
+a, a:hover, .site-nav .page-link {
+    color: var(--link);
+}
+
+a:visited {
+    color: var(--link_visited);
+}
+
+pre, code {
+    background: var(--code_bg);
+    border: 1px solid var(--border);
+}
+code table, code table td {
+    border: none;
+    margin-bottom: 0;
+}
+
+pre pre {
+    border: none;
+}
+
+pre table pre {
+    padding: 0;
+}
+
+.highlighter-rouge .highlight, .highlight {
+    background: inherit;
+}
+
+.highlight .n, .highlight .p {
+    color: var(--text);
+}
+
+.highlight .s, .highlight .s1 {
+    background-color: var(--code_highlight);
+}

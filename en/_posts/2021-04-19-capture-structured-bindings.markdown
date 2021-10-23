@@ -13,7 +13,7 @@ const auto [first, second] = std::make_tuple(1,2);
 
 *Structured bindings* are used to decompose arrays and structs/classes [^1] to named subobjects. Almost any object with non-*static*, accessible data members can be destructured this way. It works even for *bit-fields*:
 
-{% highlight cpp %}
+{% highlight cpp linenos %}
 struct BF {
   int x : 2;
 };
