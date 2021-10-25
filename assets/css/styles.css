@@ -8,21 +8,8 @@
     --link_visited: #228844;
 }
 
-body {
-    background-color: var(--sitebg);
-    color: var(--text);
-}
-
-.site-title, .site-title:visited {
-    color: var(--text);
-}
-
 .site-header {
-    border-bottom: 1px solid var(--border);
-}
-
-.site-footer {
-    border-top: 1px solid var(--border);
+    border-top-color: var(--border);
 }
 
 a, a:hover, .site-nav .page-link {
@@ -33,6 +20,7 @@ a:visited {
     color: var(--link_visited);
 }
 
+/* multiline codeblocks */
 pre, code {
     background: var(--code_bg);
     border: 1px solid var(--border);
@@ -41,23 +29,20 @@ code table, code table td {
     border: none;
     margin-bottom: 0;
 }
-
 pre pre {
     border: none;
 }
-
 pre table pre {
     padding: 0;
 }
 
+/* codeblocks highlighting */
 .highlighter-rouge .highlight, .highlight {
     background: var(--code_bg);
 }
-
 .highlight .n, .highlight .p {
     color: var(--text);
 }
-
 .highlight .s, .highlight .s1, .highlight .s2 {
     background-color: var(--code_highlight);
 }

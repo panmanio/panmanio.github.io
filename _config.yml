@@ -19,18 +19,24 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Mateusz Burnicki
-email: mateusz@burnicki.pl
+author:
+  name: Mateusz Burnicki
+  email: mateusz@burnicki.pl
 description: >- # this means to ignore newlines until "baseurl:"
   Personal page
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username:
-github_username:  panmanio
+url: "https://burnicki.pl" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
-theme: minima
+remote_theme: jekyll/minima@7a326eb6df07ee6ee5305cfc1b28f7092037e67d
 plugins:
   - jekyll-feed
+
+minima:
+  skin: dark
+  social_links:
+    twitter: mburnicki
+    github:  panmanio
 
 # Exclude from processing.
 # The following items will not be processed, by default.
