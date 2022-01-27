@@ -105,5 +105,3 @@ Further reading:
 - [VIM for writing](https://www.naperwrimo.org/wiki/index.php?title=Vim_for_Writers)
 - [10 VIM plugins for writers](https://tomfern.com/posts/vim-for-writers)
 - [Awesome vim plugins for writers](https://opensource.com/article/17/2/vim-plugins-writers)
-
-Comments on [dev.to](https://dev.to/maniowy/setting-up-vim-for-blogging-37oa).

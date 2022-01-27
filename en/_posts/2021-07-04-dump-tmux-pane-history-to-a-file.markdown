@@ -54,6 +54,3 @@ tmux-save-pane > ~/tmux-pane-history
 
 
 That command has helped me in trouble many times, I hope you also find it useful. If you are not using a terminal multiplexer, I really advise to start using one. `tmux` is the multiplexer I use, but as a `vim` addict I can't live with the default `C-b` prefix. First thing to do in my [.tmux.conf](https://github.com/maniowy/dotfiles/blob/master/.tmux.conf) is to change the binding to `C-a` 😉.
-
-
-Comments on [dev.to](https://dev.to/maniowy/dump-tmux-pane-history-to-a-file-14pi).

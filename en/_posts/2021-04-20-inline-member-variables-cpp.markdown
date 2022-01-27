@@ -85,5 +85,3 @@ Static *constexpr* members are *inline* by default.
 - [How to initialize static members in the header](https://stackoverflow.com/questions/18860895/how-to-initialize-static-members-in-the-header) on [stackoverflow.com](https://stackoverflow.com)
 - [How do inline variables work](https://stackoverflow.com/questions/38043442/how-do-inline-variables-work) on [stackoverflow.com](https://stackoverflow.com)
 </details>
-
-Comments on [dev.to](https://dev.to/maniowy/inline-member-variables-in-c-38a6).

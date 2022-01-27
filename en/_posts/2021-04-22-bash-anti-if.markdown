@@ -136,8 +136,5 @@ Here I've reused one of previous examples. The command above sets `target` to cu
 Bash (and other shells) is really powerful and complex language. I keep learning it and there is always much more to learn, which I find fascinating. If you have enjoyed this post I advice you to read more on the topic. I am not the first one to explore these areas, please check out [Elegant bash conditionals](https://timvisee.com/blog/elegant-bash-conditionals/) by Tim Visée and [Anybody can write good bash (with a little effort)](https://blog.yossarian.net/2020/01/23/Anybody-can-write-good-bash-with-a-little-effort) by William Woodruff, among others.
 
 
-Comments on [dev.to](https://dev.to/maniowy/bash-anti-if-1e5n).
-
-
 [^1]: Most often there is also a usual `test`/`[` command on the system, compare the output of `which test` with `type test`.
 [^2]: The bash manual specifies more signals supported by `trap`, like RETURN or DEBUG.
