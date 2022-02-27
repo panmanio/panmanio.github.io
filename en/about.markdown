@@ -4,10 +4,10 @@ title: About
 permalink: /en/about/
 i18n: about
 ---
-A parent, husband, reader, software engineer. Chess and running amateur.
+I have plenty of ideas that I've used to write down and never realize. Recently I've pushed myself to start working on some of them. My goal is to log the progress on the blog.
 
 
-C++ oriented, but also writing javascript, ruby and other languages: love to write software in general. Constantly trying to automate repeating tasks.
+C++ oriented, but also using javascript, ruby, go and other languages (including the shell). Automating repeating tasks makes me feel happier.
 
-- [github](https://github.com/maniowy)
+- [github](https://github.com/panmanio)
 - [dev.to](https://dev.to/maniowy)
