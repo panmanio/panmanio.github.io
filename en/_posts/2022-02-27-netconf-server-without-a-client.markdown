@@ -65,4 +65,4 @@ Note you can't directly write to the input pipe with `echo -n "<request/>" > pip
 The solution above does not work when you use password authentication. If that is the case we need to provide a command that outputs the password, which can be done with the [SSH_ASKPASS](https://man.openbsd.org/ssh#SSH_ASKPASS) environment variable. You may also need to set the [SSH_ASKPASS_REQUIRE](https://man.openbsd.org/ssh#SSH_ASKPASS_REQUIRE) variable to `force` (requires OpenSSH 8.4 or newer, use `sshpass` with older versions).
 
 
-I've prepared a small [s.sh](https://github.com/panmanio/panmanio.github.io/blob/main/code/s.sh) script that wraps all the details. It should be used the same as the `ssh` but there should be no timeouts; additionally there is no need to send the client hello message.
+I've prepared a [small script](https://github.com/panmanio/panmanio.github.io/blob/main/code/s.sh) that wraps all the details. It should be used the same as the `ssh` but there should be no timeouts; additionally there is no need to send the client hello message.
