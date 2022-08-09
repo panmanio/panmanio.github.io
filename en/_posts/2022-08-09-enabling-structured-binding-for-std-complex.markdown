@@ -10,7 +10,7 @@ The father of C++, Bjarne Stroustrup, mentions in _A Tour of C++_ that it's poss
 
 * `std::tuple_size<std::complex<T>>::value` should be an integer constant expression denoting the number of identifiers that are part of the structured binding,
 * for each identifier an expression `std::tuple_element<i, std::complex<T>>::type`, where `i` is the constant expression identifier index, should be the identifiers types,
-* for each identifier, the function `get<i>(c)`, where `i` is the constant expression identifier index, and `c` is the complex object, should provide the value of the identifiers
+* for each identifier, the function `get<i>(c)`, where `i` is the constant expression identifier index, and `c` is the complex object, should provide the value of the identifiers.
 
 We simply need to extend the `std` namespace and provide all ingredients.
 
